@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20160706231010) do
   enable_extension "plpgsql"
 
   create_table "actorepisodes", force: :cascade do |t|
+    # AM: Is "name" here the same value as "name" in the actors table? If so, do you need to include this column in `actorepisodes`?
     t.string   "name",       null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

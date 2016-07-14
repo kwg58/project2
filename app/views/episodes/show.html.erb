@@ -5,8 +5,10 @@
 <article> <%= @episode.synopsis %></article>
 </div>
 
+<!-- AM: Would suggest using a different class name here. At first I thought it was a typo! -->
 <div class=centerr>
     <h2> Cast </h2>
+<!-- AM: I recall seing some code very similar to this in your actor show view. Perhaps you could use a Rails helper method to generate both... -->
 <% if @episode.actorepisodes.any?  %>
   <% @episode.actorepisodes.each do |actorepisode|  %>
     <p><%= link_to actorepisode.actor.name, actor_path(actorepisode.actor) %> -  <%= actorepisode.actor.character %> </p>
