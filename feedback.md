@@ -29,3 +29,7 @@ I don't see a link to your deployed site. If it's deployed send it over and I'll
 ## Planning / Process / Submission
 **2: Performing**
 >Submission contains clear evidence of planning, adequate documentation, include all from previous category, as well as additional information such as unsolved issues.
+
+Good job with your planning docs and readme. Consider putting some installation instructions in there for people who don't know how to get a Rails app up and running.
+
+I would recommend placing your readme in the root directory of your app so that when somebody visits your repo that's the first thing they see.
